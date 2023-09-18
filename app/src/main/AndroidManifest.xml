@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Convertors"
+        tools:targetApi="31">
+        <activity
+            android:name=".Belgium"
+            android:exported="false" />
+        <activity
+            android:name=".Age"
+            android:exported="false" />
+        <activity
+            android:name=".Friendship"
+            android:exported="false" />
+        <activity
+            android:name=".Area_Convertor"
+            android:exported="false" />
+        <activity
+            android:name=".Area"
+            android:exported="false" />
+        <activity
+            android:name=".Volume"
+            android:exported="false" />
+        <activity
+            android:name=".Weight"
+            android:exported="false" />
+        <activity
+            android:name=".Length_Convertor"
+            android:exported="false" />
+        <activity
+            android:name=".Currency"
+            android:exported="false" />
+        <activity
+            android:name=".Time"
+            android:exported="false" />
+        <activity
+            android:name=".Temperature"
+            android:exported="false" />
+        <activity
+            android:name=".Bmi"
+            android:exported="false" />
+        <activity
+            android:name=".Splash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

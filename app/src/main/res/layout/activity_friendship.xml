@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Friendship">
+
+
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:lottie_rawRes="@raw/friend"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true">
+        </com.airbnb.lottie.LottieAnimationView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="FRIENDSHIP CALCULATOR"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginTop="260dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="320dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/lay"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/temp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:hint="Enter First Name"
+            android:inputType="textPersonName"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/temp1"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:hint="Enter Second Name"
+            android:inputType="textPersonName"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+
+
+
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:text="Calculate"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:backgroundTint="#FF0000"
+        android:layout_marginTop="490dp"
+        android:layout_centerHorizontal="true">
+    </Button>
+
+
+
+</RelativeLayout>

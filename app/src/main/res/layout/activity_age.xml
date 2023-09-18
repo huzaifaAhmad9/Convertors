@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Age">
+
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:lottie_rawRes="@raw/age"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="false">
+        </com.airbnb.lottie.LottieAnimationView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="WELCOME TO AGE CALCULATOR"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginTop="200dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="290dp"
+        android:layout_marginTop="270dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/lay"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/age"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pick Your Age"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <DatePicker
+            android:layout_marginTop="10dp"
+            android:id="@+id/datePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:datePickerMode="spinner"
+            android:layout_gravity="center"
+            android:calendarViewShown="false"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:text="Calculate"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:backgroundTint="#FF0000"
+        android:layout_marginTop="530dp"
+        android:layout_centerHorizontal="true">
+    </Button>
+
+</RelativeLayout>
